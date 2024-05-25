@@ -1,0 +1,193 @@
+/* .box{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+} */
+
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 100%;
+    z-index: 100001;
+    opacity: 1;
+    transition: opacity 0.3s ease 0s;
+    overflow: hidden;
+}
+
+.cancelModal{
+    position: absolute;
+    top: 1px;
+    right: 20px;
+    display: inline-block;
+    z-index: 100003;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.cardData{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    /* bottom: 0; */
+    z-index: 100002;
+    margin: 65px auto;
+    width: 100%;
+    max-width: 560px;
+    height: auto; /* Dynamic height based on content */
+    background-color: rgba(255, 255, 255, 1);
+    padding: 40px;
+}
+
+.cardData::-webkit-scrollbar {
+    visibility: hidden;
+  }
+
+
+.container{
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.wishBox{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+
+.increase, .decrease{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #c7c7c7;
+  border: 1px solid #c7c7c7;
+  padding-bottom: 2px;
+}
+
+.inputBox{
+    width: 25px;
+}
+
+.inputBox:hover{
+    border: 1px solid #c7c7c7;
+}
+
+.price{
+    color: #636563; 
+}
+
+
+.formBox{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formBox>label{
+    padding-bottom: 5px;
+    font-size: 16px;
+    color: #636563;
+}
+
+.formBox>input{
+    height: 56px;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 0px 10px;
+}
+
+.formBox > input:focus,
+.formBox:focus-within > input {
+  outline: none;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn{
+    width: 100%;
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    height: 60px;
+    border: 0;
+    font-size: 16px;
+    padding-left: 60px;
+    padding-right: 60px;
+    -webkit-appearance: none;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+.error{
+    background: #f95d51;
+    padding: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.success{
+    margin-top: 20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    background: #62c584;
+    color: #fff;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 20px;
+    font-size: 19px;
+    position: relative;
+}
+
+.success::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, .2); /* Use background-color instead of color */
+    position: absolute;   /* Ensure the pseudo-element is positioned absolutely */
+    top: -15px;            /* Correct the typo */
+    left: 0;
+    right: 0;
+}
+
+.error>span{
+    margin-top: 10px;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+}
+
+.wishBox:hover button{
+    color: #636563;
+    border: 1px solid #636563;
+}

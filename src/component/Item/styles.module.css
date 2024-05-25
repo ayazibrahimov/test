@@ -1,0 +1,51 @@
+.basket{
+    position: fixed;
+    right: 40px;
+    z-index: 11111;
+    top: 16%;
+    cursor: pointer;
+}
+
+
+
+.box{
+    position: relative;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    will-change: transform;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+}
+
+.box:hover{
+    transform: scale(1.1);
+}
+
+.redBox{
+    position: absolute;
+    bottom: -11px;
+    right: 3px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+     background-color: #ff0000;
+     color: #ffff;
+}
+
+
+@media(max-width:768px){
+    .box{
+        width: 60px;
+        height: 60px;
+    }
+}

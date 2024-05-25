@@ -1,0 +1,66 @@
+.button_1{
+    /* text-decoration: none; */
+    color: #ffffff;
+    display: inline-block;
+    background-color: #000000;
+    border-radius: 5px;
+    font-size: 12px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-top: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 90px;
+    padding: 6px 0px;
+}
+
+.button_2{
+    /* text-decoration: none; */
+    border: 1px solid #000000;
+    border-color: #000000;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-size: 12px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-top: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 80px;
+    padding: 6px 0px;
+}
+
+.sale{
+    color: #ffffff;
+    background-color: #ff4a4a;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Everett', Arial, sans-serif;
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50px;
+    background-color: #111;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff4a4a;
+    color: #ffffff;
+}
+
+
+
+
